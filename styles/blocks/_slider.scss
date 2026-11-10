@@ -1,0 +1,20 @@
+.slider {
+    &__block {
+         height: 190px;
+         background-color: var(--color-sand);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        text-align: center;
+        padding: 0 0px;
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid var(--color-light);
+    }
+}

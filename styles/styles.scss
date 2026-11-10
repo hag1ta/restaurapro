@@ -1,0 +1,19 @@
+@import 'fonts', 'globals', 'media', 'mixins', 'normalize', 'utils', 'variables';
+
+
+@import
+'blocks/burger-button',
+'blocks/mobile-overlay',
+'blocks/cross-button',
+'blocks/header',
+'blocks/banner',
+'blocks/slider',
+'blocks/about-us',
+'blocks/services',
+'blocks/projects',
+'blocks/leaders',
+'blocks/blog',
+'blocks/promo',
+'blocks/contact',
+'blocks/footer',
+'blocks/main';

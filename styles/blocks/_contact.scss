@@ -1,0 +1,223 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        gap: 50px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+
+        @include mobile {
+            gap: 30px;
+        }
+
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+
+        &-title {
+            margin-bottom: 15px;
+        }
+
+        &-subtitle {
+            font-size: 36px;
+            color: var(--color-gray);
+            font-weight: 700;
+            font-family: 'Lato';
+            line-height: 1.18;
+
+            @include mobile {
+             font-size: 30px;
+            }   
+        }
+
+        &-desc {
+            color: var(--color-gray);
+            font-size: 17px;
+        }
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 0px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+
+        &-title {
+            color: var(--color-dark);
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Playfair';
+        }
+
+        &-desc {
+            color:  var(--color-gray);
+            font-size: 17px;
+            font-style: normal;
+            line-height: 1.18;
+
+            a {
+                @include hover {
+                    color: var(--color-yellow);
+                }
+            }
+        }
+
+
+        p {
+            --paragraphMarginBottom: 0px;
+        }
+
+    }
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        background-color: color-mix(in srgb, var(--color-light-alt) 20%, transparent);
+        border-radius: var(--border-radius);
+        box-shadow: 0px 4px 4px 0px color-mix(in srgb, var(--color-dark) 25%, transparent);
+
+        &-header {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &-title {
+            color: var(--color-dark);
+            font-size: 24px;
+
+        }
+
+        &-intro {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        &-media {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: var(--border-radius);
+            background-color: var(--color-gray);
+            width: 48px;
+            height: 48px;
+
+            @include mobile {
+                width: 68px;
+            }
+
+            @include mobile-s {
+                
+            }
+        }
+
+
+        &-desc {
+            font-size: 17px;
+
+            @include mobile {
+                font-size: 15px;
+            }
+
+        }
+
+        &-fields {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-input {
+            width: 100%;
+            padding: 0px 20px;
+            font-size: 15px;
+
+            @include hover {
+                border: 2px solid var(--color-yellow);
+            }
+        }
+
+        &-input::placeholder {
+            font-size: 14px;
+        }
+
+        &-input:focus {
+            outline: none;
+        }
+
+        &-textarea {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        &-label {
+            font-size: 17px;
+        }
+
+        &-message {
+            font-size: 15px;
+            padding: 20px;
+            height: 200px;
+            resize: none;
+
+            @include hover {
+                border: 2px solid var(--color-yellow);
+            }
+        }
+
+        &-message::placeholder {
+            font-size: 14px;
+        }
+
+        &-message:focus {
+            outline: none;
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            padding: 20px;
+
+            @include mobile {
+                justify-content: center;
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+.info {
+    transition-duration: 0.2s;
+
+    @include hover {
+        transform: scale(1.05);
+        transition-duration: 0.2s;
+    }
+}

@@ -1,0 +1,56 @@
+body {
+
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    line-height: 0.6;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea {
+    background-color: color-mix(in srgb, var(--color-gray) 10%, transparent);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    height: var(--input-height);
+}
+
+button,
+a {
+    height: var(--button-height);
+}
+
+
+
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: var(--font-family-accent);
+    color: var(--color-dark);
+}
+
+h2 {
+    font-family: var(--font-family-accent);
+    color: var(--color-dark);
+}
+
+h3 {
+    color: var(--color-gray);
+}
+

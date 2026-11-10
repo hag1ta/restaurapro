@@ -1,0 +1,66 @@
+.promo {
+    &__content {
+        height: 299px;
+        background: url('/images/promo.jpg') center / cover no-repeat;
+        border-radius: var(--border-radius);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 90px;
+
+        @include desktop {
+            padding: 0 45px;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+
+        &-subtitle {
+            color: var(--color-yellow);
+            font-size: 17px;
+        }
+
+        &-title {
+            color: var(--color-light);
+            font-size: 36px;
+            font-family: 'Lato';
+            line-height: 1.18;
+
+            @include tablet {
+
+                br {
+                    display: none;
+                }
+            }
+
+
+            @include mobile {
+                font-size: 30px;
+            }
+        }
+    }
+
+    &__actions {
+        &-button {
+            align-items: center;
+            padding: 10px 15px;
+            font-size: 16px;
+
+
+            @include hover {
+                color: var(--color-yellow);
+                border-color: var(--color-yellow);
+            }
+        }
+    }
+}

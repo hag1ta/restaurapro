@@ -1,0 +1,201 @@
+.about-us {
+
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include desktop {
+            gap: 40px;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+        }
+
+    }
+
+    &__visual {
+        position: relative;
+    }
+
+    &__image {
+        border-radius: var(--border-radius);
+        position: relative;
+        z-index: 2;
+
+        @include mobile {
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__square {
+        z-index: 1;
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background-color: var(--color-sand);
+
+        top: -7%;
+        left: -7%;
+
+        @include mobile {
+           
+        }
+    }
+
+    &__badge {
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 20px;
+        background-color: var(--color-yellow);
+        border-radius: var(--border-radius);
+        width: 177px;
+        height: 62px;
+
+        position: relative;
+        top: -84%;
+        right: -50%;
+
+        &-num {
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        @include tablet {
+            right: -70%;
+        }
+
+        @include mobile {
+            right: -50%;
+        }
+    }
+
+    &__dots {
+         position: absolute;
+         bottom: 11%; /* смещение вниз за пределы картинки */
+         right: 20%;  /* смещение вправо за пределы картинки */
+         width: 99px;  /* ширина сетки */
+         height: 130px; /* высота сетки */
+         z-index: 1;    /* уходит под картинку */
+
+         /* Рисуем сплошные песочные точки, которые при размере 4px выглядят один в один как квадраты на макете */
+         background-image: radial-gradient(#dfba96 5px, transparent 5px);
+         background-size: 16px 16px;
+         
+         -webkit-mask: linear-gradient(to top, #000 30%, transparent 100%) no-repeat;
+         mask: linear-gradient(to top, #000 30%, transparent 100%) no-repeat;
+
+         @include desktop {
+            display: none;
+         }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        align-items: start;
+
+        @include tablet {
+            align-items: center;
+        }
+
+        @include mobile {
+            gap: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 19px;
+    }
+
+    &__subtitle {
+        font-size: 36px;
+        line-height: 1.18;
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+
+    &__desc {
+        font-size: 17px;
+    }
+
+    &__awards {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+
+        @include tablet {
+            align-items: center;
+        }
+
+        &-title {
+            color: var(--color-dark);
+            font-size: 18px;
+        }
+
+        &-list {
+            display: flex;
+            gap: 15px;
+
+            @include mobile-s {
+                flex-direction: column;
+            }
+        }
+
+        &-item {
+            padding: 6px 14px;
+            width: 260px;
+            height: 67px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 8px;
+            font-size: 16px;
+            line-height: 1.23;
+            border: var(--border) var(--color-yellow);
+            border-radius: var(--border-radius);
+
+            @include mobile {
+                width: 100%;
+                height: auto;
+            }
+
+            transition-duration: 0.2s;
+
+            @include hover {
+                transform: scale(1.05);
+                transition-duration: 0.2s;
+            }
+        }
+
+        &-button {
+            margin-top: 20px;
+            width: 145px;
+            height: 38px;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+
+            @include tablet {
+                margin: 10px;
+            }
+        }
+    }
+
+}

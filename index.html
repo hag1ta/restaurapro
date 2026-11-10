@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestauraPro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <nav class="header__navigation container header--hidden">
+            <div class="header__navigation-header">
+                <a href="#header" class="header__navigation-logo">
+                    <svg class="header__navigation-icon" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000" fill="currentColor" customFrame="#000000">
+	             <rect id="Rectangle 5" width="18.000000" height="18.000000" x="0.000000" y="0.000000" fill="currentColor" />
+                </svg>
+                <span class="header__navigation-title">RestauraPro.</span>
+                </a>
+            </div>
+            <ul class="header__navigation-list hidden-mobile">
+                <li class="header__navigation-item">
+                    <a href="#about-us" class="header__navigation-link">About Us</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="#services" class="header__navigation-link">Services</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="#projects" class="header__navigation-link">Projects</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="#blog" class="header__navigation-link">Blog</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="#contact" class="header__navigation-link">Contact</a>
+                </li>
+            </ul>
+            <button 
+                 class="header__burger-button burger-button visible-mobile"
+                 type="button"
+                 onclick="mobileOverlay.showModal()"
+                >
+                 <span class="visually-hidden">Open navigation menu</span>
+                </button>
+        </nav>
+        <div class="banner container">
+            <div class="banner__text">
+             <span class="banner__subtitle">Building Renovation & Restoration</span>
+             <h1 class="banner__title">We transform spaces, we <br> preserve history.</h1>
+             <p class="banner__desc">Specialists in the renovation and restoration of historic and <br> contemporary buildings.</p>
+             <div class="banner__buttons">
+                <a href="main.html" class="banner__button button">View Projects →</a>
+                <a href="#contact" class="banner__button button-transparent">Contact Us</a>
+             </div>
+            </div>
+            <div class="banner__media">
+                <img 
+                src="./images/banner-image.png" 
+                alt="Restored historical building" 
+                width="620" height="729" loading="lazy"
+                class="banner__image">
+                <div class="banner__badge badge-top">
+                    <img 
+                    src="./images/icons/build.svg" 
+                    alt="" 
+                    width="40" height="40" loading="lazy"
+                    class="banner__badge-icon">
+                    <div class="banner__badge-text">
+                        <span class="banner__badge-title">+240</span>
+                        <span class="banner__badge-subtitle">Buildings restored</span>
+                    </div>
+                </div>
+                <div class="banner__badge badge-bottom">
+                    <img 
+                    src="./images/icons/award.svg" 
+                    alt="" 
+                    width="40" height="40" loading="lazy"
+                    class="banner__badge-icon">
+                    <div class="banner__badge-text">
+                        <span class="banner__badge-title">Recognition</span>
+                        <span class="banner__badge-subtitle">National Restoration Award</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+     <section class="slider">
+        <div class="slider__block">
+            <ul class="slider__list container">
+                <li class="slider__item">
+                    <span class="slider__text "></span>
+                </li>
+                <li class="slider__item">
+                    <span class="slider__text "></span>
+                </li>
+                <li class="slider__item">
+                    <span class="slider__text "></span>
+                </li>
+            </ul>
+        </div>
+     </section>
+
+     <section id="about-us" class="about-us container padding">
+        <div class="about-us__block">
+            <div class="about-us__visual">
+                <div class="about-us__square"></div>
+                <img 
+                    src="./images/about-us.jpg" 
+                    alt="Worker tools" 
+                    width="480" height="510" loading="lazy"
+                    class="about-us__image">
+                  <div class="about-us__badge">
+                    <span class="about-us__badge-num">+20</span>
+                    <span class="about-us__badge-text">Years of <br> experience</span>
+                </div>
+                <div class="about-us__dots"></div>
+            </div>
+            <div class="about-us__content">
+                <h2 class="about-us__title underline">About Us</h2>
+                <h3 class="about-us__subtitle">We preserve history while adapting <br> spaces to today's needs.</h3>
+                <p class="about-us__desc">RestauraPro was founded in 2003 by a team of architects passionate about heritage preservation. Since then, we have worked on more than 240 projects, combining traditional techniques with modern technology.</p>
+
+                <div class="about-us__awards">
+                <h3 class="about-us__awards-title">Certifications and awards</h3>
+                <ul class="about-us__awards-list">
+                    <li class="about-us__awards-item">
+                        <img 
+                        src="./images/icons/leed-certificate.svg" 
+                        alt="" 
+                        width="51" height="55" loading="lazy"
+                        class="about-us__awards-image">
+                        <span class="about-us__awards-desc">LEED Gold Certification for sustainability</span>
+                    </li>
+                    <li class="about-us__awards-item">
+                        <img 
+                        src="./images/icons/restoration-award.svg" 
+                        alt="" 
+                        width="51" height="55" loading="lazy"
+                        class="about-us__awards-image">
+                        <span class="about-us__awards-desc">National Restoration Award 2023</span>
+                    </li>
+                </ul>
+                <a href="main.html" class="about-us__awards-button button">Learn more →</a>
+            </div>
+            </div>
+        </div>
+     </section>
+
+     <section id="services" class="services container padding">
+        <div class="services__content">
+            <div class="services__content-text">
+                <h2 class="services__title underline">Our Services</h2>
+                <p class="services__desc">We preserve architectural heritage and modernize spaces with specialized techniques. We offer restoration, renovation, consulting and supervision to guarantee quality and authenticity in every project.</p>
+            </div>
+            <ul class="services__content-list">
+                <li class="services__content-item">
+                    <article class="services__content-card card-first">
+                        <div class="services__content-imgwrapper">
+                            <img 
+                            src="./images/icons/church.svg" 
+                            alt="" 
+                            width="40" height="36" loading="lazy"
+                            class="services__content-image">
+                        </div>
+                        <h3 class="services__content-title">Restoration of historic <br> buildings</h3>
+                        <p class="services__content-desc">We use traditional techniques and authentic materials to guarantee the authenticity of each project.</p>
+                    </article>
+                </li>
+                <li class="services__content-item">
+                    <article class="services__content-card card-second">
+                        <div class="services__content-imgwrapper">
+                            <img 
+                            src="./images/icons/office-building.svg" 
+                            alt="" 
+                            width="40" height="36" loading="lazy"
+                            class="services__content-image">
+                        </div>
+                        <h3 class="services__content-title">Renovation of contemporary <br> buildings</h3>
+                        <p class="services__content-desc">We modernize old structures to improve their energy efficiency and functionality.</p>
+                    </article>
+                </li>
+                <li class="services__content-item">
+                    <article class="services__content-card card-thirst">
+                        <div class="services__content-imgwrapper">
+                            <img 
+                            src="./images/icons/pencil.svg" 
+                            alt="" 
+                            width="40" height="36" loading="lazy"
+                            class="services__content-image">
+                        </div>
+                        <h3 class="services__content-title title-center">Consulting and design</h3>
+                        <p class="services__content-desc">We offer customized consulting for restoration projects, from planning to execution</p>
+                    </article>
+                </li>
+            </ul>
+            <a href="main.html" class="services__content-button button">Learn more</a>
+        </div>
+     </section>
+
+     <section id="projects" class="projects container padding">
+        <div class="projects__header">
+            <h2 class="projects__header-title underline">Projects</h2>
+            <p class="projects__header-subtitle">Discover how we transform spaces, preserving their history and adapting <br> them to the present.</p>
+        </div>
+        <div class="projects__controls">
+            <nav class="projects__filters">
+                <ul class="projects__filters-list">
+                    <li class="projects__filters-item">
+                        <button 
+                         class="projects__filters-button button-transparent view-all"
+                         type="button"
+                        >
+                        View all
+                        </button>
+                    </li>
+                    <li class="projects__filters-item">
+                        <button 
+                         class="projects__filters-button button-transparent"
+                         type="button"
+                        >
+                        Historic
+                        </button>
+                    </li>
+                    <li class="projects__filters-item">
+                        <button 
+                         class="projects__filters-button button-transparent"
+                         type="button"
+                        >
+                        Contemporary
+                        </button>
+                    </li>
+                    <li class="projects__filters-item">
+                        <button 
+                         class="projects__filters-button button-transparent"
+                         type="button"
+                        >
+                        Residential
+                        </button>
+                    </li>
+                    <li class="projects__filters-item">
+                        <button 
+                         class="projects__filters-button button-transparent"
+                         type="button"
+                        >
+                        Commercial
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="projects__sorting">
+                <button 
+                 class="projects__sorting-button button-transparent"
+                 type="button"
+                 id="year-select"
+                 title="Choose a Year"
+                >
+                 <svg viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.000000" height="16.000000" fill="none" customFrame="#000000">
+	              <path id="Vector" d="M12.4444 1.6L11.6667 1.6L11.6667 0L10.1111 0L10.1111 1.6L3.88889 1.6L3.88889 0L2.33333 0L2.33333 1.6L1.55556 1.6C0.692222 1.6 0.00777777 2.32 0.00777777 3.2L0 14.4C0 15.28 0.692222 16 1.55556 16L12.4444 16C13.3 16 14 15.28 14 14.4L14 3.2C14 2.32 13.3 1.6 12.4444 1.6ZM12.4444 14.4L1.55556 14.4L1.55556 6.4L12.4444 6.4L12.4444 14.4ZM4.66667 9.6L3.11111 9.6L3.11111 8L4.66667 8L4.66667 9.6ZM7.77778 9.6L6.22222 9.6L6.22222 8L7.77778 8L7.77778 9.6ZM10.8889 9.6L9.33333 9.6L9.33333 8L10.8889 8L10.8889 9.6ZM4.66667 12.8L3.11111 12.8L3.11111 11.2L4.66667 11.2L4.66667 12.8ZM7.77778 12.8L6.22222 12.8L6.22222 11.2L7.77778 11.2L7.77778 12.8ZM10.8889 12.8L9.33333 12.8L9.33333 11.2L10.8889 11.2L10.8889 12.8Z" fill="rgb(183,183,183)" fill-rule="nonzero" />
+                 </svg>
+
+                 <span class="projects__sorting-text">2024</span>
+
+                 <svg class="projects__sorting-arrow select-icon--arrow" viewBox="0 0 33.0625 32.0645" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.062500" height="32.064453" fill="currentColor" customFrame="#000000">
+	             <defs>
+		           <image id="image_0" width="96.000000" height="96.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAAe9JREFUeJzt2D9uE0EcR/E32MLSiiulMFRGmJK7cAuuQZuRYjfggitFWyBrTcOGSDjx2vHOzi96nyaNo5G+z+N/IEmSJEmSJEmSJEmSJEmSJEmSJEmSFFEqfWDOuZnNZt9TSt9Wq9WP0ucfs91ub4Cvi8Xiy3K5vC959puSh+Wcm/l8fptS+gTcbjabDyXPP2a73d50XXd3OBxWbdve7Xa7dyXPL3YD+vGBx6O3wOepbkI/fkrpYfSu6341TfOx1E0oEuCJ8XuTRDg2fq9khNEDnBi/VzTCc+P3SkUYNcDA8XtFIgwZv1ciQtE34RMaRn5jPmf8Ump5CXpslJtw7viv4iWoN3WEWseH6T+GPucqEWoeHwp/Ey4dofbxYaKfIkpEiDA+TBAAxo8QZXyYKACMFyHS+DBhALh+hGjjw8QB4HoRIo4PFQSAl0eIOj5UEgAuj5BS+h11fKgoADxEyMD7gf/S/v3bDHz8z/1+v16v1+3ph5ZRVQC46CYMUtszv1ddALh+hFrHh0oDwPUi1Dw+VBwAXh6h9vGh8gBweYQI40OAAHB+hCjjQ5AAMDxCpPEhUAA4HSHa+BAsADwdIeL4EDAA/B8h6vgQNAD8i9B13duo44eXc25yzkN/B5IkSZIkSZIkSZIkSZIkSXrt/gBLXKREMaADJQAAAABJRU5ErkJggg==" />
+		          <pattern id="pattern_0" width="1.000000" height="1.000000" image-fill-type="fit" patternContentUnits="objectBoundingBox">
+			        <use transform="matrix(0.010101,0,0,0.0104167,0.0151515,0)" xlink:href="#image_0" />
+		          </pattern>
+	             </defs>
+	             <rect id="Expand Arrow" width="33.000000" height="32.000000" x="0.000000" y="0.000000" fill="url(#pattern_0)" transform="matrix(-0.999998,-0.00195248,-0.00195248,0.999998,33.0625,0.0644531)" />
+                 </svg>
+                </button>
+
+                <ul role="listbox" aria-labelledby="year-select" class="projects__sorting-select">
+                    <li role="option" aria-selected="true" class="projects__sorting-option is-active">2024</li>
+                    <li role="option" class="projects__sorting-option">2023</li>
+                    <li role="option" class="projects__sorting-option">2022</li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects__gallery">
+            <ul class="projects__grid">
+                <li class="projects__grid-item">
+                    <article class="projects__grid-card">
+                        <img 
+                            src="./images/project1.jpg" 
+                            alt="" 
+                            width="358" height="348" loading="lazy"
+                            class="projects__grid-image">
+                    </article>
+                </li>
+                <li class="projects__grid-item">
+                    <article class="projects__grid-card">
+                        <img 
+                            src="./images/project2.jpg" 
+                            alt="" 
+                            width="358" height="348" loading="lazy"
+                            class="projects__grid-image">
+                    </article>
+                </li>
+                <li class="projects__grid-item">
+                    <article class="projects__grid-card">
+                        <img 
+                            src="./images/project3.jpg" 
+                            alt="" 
+                            width="358" height="348" loading="lazy"
+                            class="projects__grid-image">
+                    </article>
+                </li>
+                <li class="projects__grid-item">
+                    <article class="projects__grid-card">
+                        <img 
+                            src="./images/project4.jpg" 
+                            alt="" 
+                            width="358" height="368" loading="lazy"
+                            class="projects__grid-image">
+                    </article>
+                </li>
+                <li class="projects__grid-item--wide">
+                    <article class="projects__grid-card">
+                        <img 
+                            src="./images/project5.jpg" 
+                            alt="" 
+                            width="742" height="368" loading="lazy"
+                            class="projects__grid-image image-wide">
+                    </article>
+                </li>
+            </ul>
+        </div>
+     </section>
+
+     <section class="leaders container padding">
+        <div class="leaders__content">
+            <ul class="leaders__content-list">
+                <li class="leaders__content-item">
+                    <article class="leaders__content-card">
+                        <div class="leaders__content-imgwrapper">
+                            <img 
+                            src="./images/icons/graph.svg" 
+                            alt="" 
+                            width="40" height="40" loading="lazy"
+                            class="leaders__content-image">
+                        </div>
+                        <div class="leaders__content-text">
+                         <h3 class="leaders__content-title">Heritage Preservation</h3>
+                         <p class="leaders__content-desc">Use of original materials and artisanal methods to preserve the essence of the heritage.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="leaders__content-item second-card">
+                    <article class="leaders__content-card">
+                        <div class="leaders__content-imgwrapper">
+                            <img 
+                            src="./images/icons/monitor.svg" 
+                            alt="" 
+                            width="40" height="40" loading="lazy"
+                            class="leaders__content-image">
+                        </div>
+                        <div class="leaders__content-text">
+                         <h3 class="leaders__content-title">Innovation and Technology</h3>
+                         <p class="leaders__content-desc">Integration of modern technology, such as 3D scanning and home automation, to improve functionality.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="leaders__content-item">
+                    <article class="leaders__content-card">
+                        <div class="leaders__content-imgwrapper">
+                            <img 
+                            src="./images/icons/medal.svg" 
+                            alt="" 
+                            width="40" height="40" loading="lazy"
+                            class="leaders__content-image">
+                        </div>
+                        <div class="leaders__content-text">
+                         <h3 class="leaders__content-title">Customization</h3>
+                         <p class="leaders__content-desc">International certifications that vouch for the quality and sustainability of the projects.</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <div class="leaders__text">
+            <h2 class="leaders__text-title">RestauraPro. leaders in restoration and sustainability.</h2>
+            <p class="leaders__text-desc">From the restoration of iconic buildings to the modernization of contemporary spaces, we provide customized solutions tailored to the needs of each project. Our team of experts offers consulting, design, supervision and execution, guaranteeing meticulous work that respects the original architecture.</p>
+            <a href="main.html" class="leaders__text-button button">Learn more</a>
+        </div>
+     </section>
+
+     <section id="blog" class="blog container padding">
+        <h2 class="blog__title underline">Blog</h2>
+        <div class="blog__content">
+            <ul class="blog__content-list">
+                <li class="blog__content-item">
+                    <article class="blog__content-card">
+                        <div class="blog__content-imgwrapper">
+                            <img 
+                            src="./images/blog1.jpg" 
+                            alt="" 
+                            width="360" height="182" loading="lazy"
+                            class="blog__content-image">
+                            <time class="blog__content-date" datetime="2024-09-01">Sep 1, 2024</time>
+                        </div>
+                        <div class="blog__content-text">
+                            <h3 class="blog__content-title">
+                                <a href="main.html" class="blog__content-link">The 5 most used materials in facade restoration.</a>
+                            </h3>
+                        </div>
+                    </article>
+                </li>
+                 <li class="blog__content-item">
+                    <article class="blog__content-card">
+                        <div class="blog__content-imgwrapper">
+                            <img 
+                            src="./images/blog2.jpg" 
+                            alt="" 
+                            width="360" height="182" loading="lazy"
+                            class="blog__content-image">
+                            <time class="blog__content-date" datetime="2024-09-01">Sep 1, 2024</time>
+                        </div>
+                        <div class="blog__content-text">
+                            <h3 class="blog__content-title">
+                                <a href="main.html" class="blog__content-link">How to identify structural damage in old buildings.</a>
+                            </h3>
+                        </div>
+                    </article>
+                </li>
+                 <li class="blog__content-item">
+                    <article class="blog__content-card">
+                        <div class="blog__content-imgwrapper">
+                            <img 
+                            src="./images/blog3.jpg" 
+                            alt="" 
+                            width="360" height="182" loading="lazy"
+                            class="blog__content-image">
+                            <time class="blog__content-date" datetime="2024-09-01">Sep 1, 2024</time>
+                        </div>
+                        <div class="blog__content-text">
+                            <h3 class="blog__content-title">
+                                <a href="main.html" class="blog__content-link">Building renovation trends for 2024.</a>
+                            </h3>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+     </section>
+
+     <section class="promo container padding">
+        <div class="promo__content">
+            <div class="promo__text">
+             <h3 class="promo__text-subtitle">Do you have a project in mind?</h3>
+             <h2 class="promo__text-title">At RestauraPro. we would love to help you <br> make it a reality.</h2>
+            </div>
+         <div class="promo__actions">
+            <a href="main.html" class="promo__actions-button button">Yes, I want more information</a>
+         </div>
+        </div>
+     </section>
+
+     <section id="contact" class="contact container padding">
+        <div class="contact__info">
+            <div class="contact__header">
+                <h2 class="contact__header-title underline">Contact Us</h2>
+                <h3 class="contact__header-subtitle">From idea to reality <br> with RestauraPro.</h3>
+                <p class="contact__header-desc">We analyze your needs and create a customized plan.</p>
+            </div>
+            <div class="contact__details">
+                <div class="contact__details-call info">
+                    <p class="contact__details-title">Call center</p>
+                    <p class="contact__details-desc" ><a href="tel:+1234567890">+123 456 7890</a></p>
+                    <p class="contact__details-desc"><a href="tel:+1234567890">+123 456 7890</a></p>
+                </div>
+                <div class="contact__details-location info">
+                    <p class="contact__details-title">Our location</p>
+                    <address class="contact__details-desc">
+                        Country, City - 1234 <br>
+                        Main Street, Second Street
+                    </address>
+                </div>
+                <div class="contact__details-mail info">
+                    <p class="contact__details-title">Email</p>
+                    <p class="contact__details-desc"><a href="mailto:info@restaurapro.com">info@restaurapro.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contact__form">
+            <form class="contact__form-wrapper">
+                <div class="contact__form-header">
+                    <h3 class="contact__form-title">Tell us about your project</h3>
+                    <div class="contact__form-intro">
+                        <div class="contact__form-media">
+                            <img 
+                              src="./images/icons/mail.svg" 
+                             alt="" 
+                             width="32" height="32" loading="lazy"
+                             class="contact__form-image">
+                        </div>
+                        <p class="contact__form-desc">Write us a few words about your idea and we will prepare a <br> tailored proposal.</p>
+                    </div>
+                </div>
+
+                <div class="contact__form-fields">
+                        <div class="contact__form-inputs">
+                            <input type="text" name="fullname" placeholder="Full name" required class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-inputs">
+                            <input type="email" name="email" placeholder="Email" required class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-inputs">
+                            <input type="tel" name="phone" placeholder="Phone" required class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-textarea">
+                            <label class="contact__form-label" for="message">Message</label>
+                            <textarea class="contact__form-message" name="message" id="message" placeholder="Describe your project (type of building, location, specific needs, etc.)"></textarea>
+                        </div>
+                </div>
+
+                <button type="submit" class="contact__form-button button">Send my project</button>
+            </form>
+        </div>
+     </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__navigation container">
+            <div class="footer__navigation-header">
+                <a href="#header" class="footer__navigation-logo">
+                    <svg class="header__navigation-icon" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000" fill="currentColor" customFrame="#000000">
+	             <rect id="Rectangle 5" width="18.000000" height="18.000000" x="0.000000" y="0.000000" fill="currentColor" />
+                </svg>
+                <span class="header__navigation-title">RestauraPro.</span>
+                </a>
+            </div>
+            <nav class="footer__navigation-menu">
+                <div class="footer__navigation-column">
+                    <h3 class="footer__navigation-title">Company</h3>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a href="#about-us" class="footer__navigation-link">About Us</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#services" class="footer__navigation-link">Services</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#projects" class="footer__navigation-link">Projects</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#blog" class="footer__navigation-link">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__navigation-column">
+                    <h3 class="footer__navigation-title">Support</h3>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a href="main.html" class="footer__navigation-link">FAQ</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#contact" class="footer__navigation-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="footer__navigation-column">
+                    <h3 class="footer__navigation-title">Links</h3>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a href="main.html" class="footer__navigation-link">Terms and Conditions</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="main.html" class="footer__navigation-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button 
+             class="mobile-overlay__close-button cross-button"
+             type="submit"
+            >
+             <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="#about-us" class="mobile-overlay__link">About Us</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#services" class="mobile-overlay__link">Services</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#projects" class="mobile-overlay__link">Projects</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#blog" class="mobile-overlay__link">Blog</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#contact" class="mobile-overlay__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+    
+</body>
+</html>

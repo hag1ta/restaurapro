@@ -1,0 +1,86 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    &__content {
+        &-list {
+            display: flex;
+            gap: 25px;
+
+            @include tablet {
+                flex-direction: column;
+            }
+        }
+
+        &-imgwrapper {
+            position: relative;
+        }
+
+        &-image {
+            @include tablet {
+                max-width: 320px;
+                max-height: 160px;
+            }
+
+            @include mobile {
+                max-width: 360px;
+            }
+        }
+
+        &-date {
+            position: absolute;
+            left: 5%;
+            top: 73%;
+
+            font-size: 14px;
+            background-color: color-mix(in srgb, var(--color-gray-alt) 85%, transparent);
+            border-radius: var(--border-radius);
+            padding: 7px 7px;
+        }
+
+        &-card {
+            max-width: 360px;
+            height: auto;
+
+            border-radius: var(--border-radius);
+            box-shadow: 0px 1px 2.8px 0px var(--color-gray);
+
+            transition-duration: 0.2s;
+
+            @include hover {
+                transform: scale(1.05);
+                transition-duration: 0.2s;
+            }
+
+            @include tablet {
+                display: flex;
+                max-width: 720px;
+                height: 160px;
+            }
+
+            @include mobile {
+                max-width: 360px;
+                width: auto;
+                height: 230px;
+                flex-direction: column;
+
+            }
+        }
+
+        &-title {
+            padding: 15px;
+            font-size: 17px;
+            color: var(--color-dark);
+            text-align: start;
+        }
+
+        &-link {
+            text-align: start;
+            @include hover {
+                color: var(--color-yellow);
+            }
+        }
+    }
+}
