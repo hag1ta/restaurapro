@@ -1,7 +1,7 @@
 .promo {
     &__content {
         height: 299px;
-        background: url('./images/promo.jpg') center / cover no-repeat;
+        background: url('../images/promo.jpg') center / cover no-repeat;
         border-radius: var(--border-radius);
 
         display: flex;
